@@ -1,0 +1,6 @@
+addUser:
+  handler: src/functions/user/handler.main
+  events:
+    - httpApi:
+        method: POST
+        path: /user
