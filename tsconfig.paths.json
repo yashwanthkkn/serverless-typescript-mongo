@@ -4,7 +4,10 @@
     "paths": {
       "@functions/*": ["src/functions/*"],
       "@libs/*": ["src/libs/*"],
-      "@handlers/*":["src/handlers/*"]
+      "@models/*":["src/models/*"],
+      "@beans/*":["src/beans/*"],
+      "@actions/*":["src/actions/*"],
+      "@service/*":["src/service/*"]
     }
   }
 }

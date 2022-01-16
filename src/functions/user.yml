@@ -1,0 +1,24 @@
+addUser:
+  handler: src/actions/user/addUser.action.main
+  events:
+    - httpApi:
+        method: POST
+        path: /user
+getUsers:
+  handler: src/actions/user/getUsers.action.main
+  events:
+    - httpApi:
+        method: GET
+        path: /users
+getUser:
+  handler: src/actions/user/getUser.action.main
+  events:
+    - httpApi:
+        method: GET
+        path: /user/{id}
+updateUser:
+  handler: src/actions/user/updateUser.action.main
+  events:
+    - httpApi:
+        method: PUT
+        path: /user/{id}

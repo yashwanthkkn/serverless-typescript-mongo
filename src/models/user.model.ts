@@ -1,16 +1,11 @@
 import { Schema, model } from 'mongoose';
+import { IUser } from 'src/beans/IUser';
 
-interface User {
-    name: string;
-    email: string;
-    password: string;
-}
-
-const schema = new Schema<User>({
+const schema = new Schema<IUser>({
 name: { type: String, required: true },
 email: { type: String, required: true },
 password: {type: String, required: true}
 });
 
-export const UserModel = model<User>('User', schema);
+export const UserModel = model<IUser>('User', schema);
   

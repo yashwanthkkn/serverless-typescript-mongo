@@ -6,7 +6,6 @@ import { DbConfig } from "../config/db.config";
 // }
 
 // method level decorator
-// target: any, propertyKey: string, descriptor: PropertyDescriptor
-export const Api = ()=>{
+export const Api = (_target: any, _propertyKey: string, _descriptor: PropertyDescriptor)=>{
      new DbConfig().connectDb();
 }

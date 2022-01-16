@@ -21,7 +21,7 @@ provider:
   lambdaHashingVersion: '20201221'
 
 functions:
-  - ${file(src/functions/user/user.yml)}
+  - ${file(src/functions/user.yml)}
 package: 
   individually: true
 custom: 
