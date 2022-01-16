@@ -1,0 +1,23 @@
+{
+    "name": {
+      "presence": {
+        "allowEmpty": false
+      },
+      "type": "string"
+    },
+    "email": {
+        "presence": {
+          "allowEmpty": false
+        },
+        "type": "string"
+    },
+    "password": {
+        "presence": {
+          "allowEmpty": false
+        },
+        "type": "string",
+        "length":{
+          "minimum":8
+        }
+    }
+}

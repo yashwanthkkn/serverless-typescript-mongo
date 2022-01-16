@@ -7,7 +7,8 @@
       "@models/*":["src/models/*"],
       "@beans/*":["src/beans/*"],
       "@actions/*":["src/actions/*"],
-      "@service/*":["src/service/*"]
+      "@service/*":["src/service/*"],
+      "@validators/*":["src/validators/*"], 
     }
   }
 }

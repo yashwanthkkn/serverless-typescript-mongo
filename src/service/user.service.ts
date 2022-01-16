@@ -9,7 +9,7 @@ export class UserService{
             try{
                 let temp = new UserModel(user);
                 await temp.save()
-                resolve(temp.name)
+                resolve(temp)
             }catch(error){
                 reject(error)
             }
